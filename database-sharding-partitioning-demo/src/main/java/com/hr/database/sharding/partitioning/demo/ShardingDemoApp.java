@@ -41,8 +41,8 @@ public class ShardingDemoApp {
         } else {
             System.out.println("Didn't finish creating data in 30 seconds...");
         }
-        System.out.println(repository.ofId(230279).get());
-        System.out.println(repository.ofId(834250).get());
+        System.out.println(repository.ofId(60933).get());
+        System.out.println(repository.ofId(562079).get());
 
         System.out.println(repository.allOfNameLike("az").size());
     }

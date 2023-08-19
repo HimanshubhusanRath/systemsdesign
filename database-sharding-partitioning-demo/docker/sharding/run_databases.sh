@@ -2,8 +2,9 @@ docker build -t postgres-shard .
 
 shards=${SHARDS:-3}
 
-do
+
 for (( i=0; i<$shards; i++ ))
+do
   shard_name="postgres-shard-$i"
   docker stop $shard_name || true
   docker rm $shard_name || true
